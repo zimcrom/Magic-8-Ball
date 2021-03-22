@@ -1,0 +1,10 @@
+body {
+  margin: 20%;
+  background: rgb(6,7,137);
+  background: radial-gradient(circle, rgba(6,7,137,0.5102634803921569) 0%, rgba(6,7,137,1) 100%);
+  text-align: center;
+}
+
+#start {
+  margin-top: 1%;
+}
