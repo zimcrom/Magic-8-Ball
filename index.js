@@ -1,11 +1,12 @@
-// var userName = 'Megan';
-
-// userName === true ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
-
 function runEightBall(){
-    
-var userQuestion = document.getElementById('questionForm');
-alert(`You asked: ${userQuestion}`);
+
+var userQuestion = document.querySelector('#questionForm').value;
+console.log(userQuestion);
+if (userQuestion === '') {
+    alert('Please ask a question.');
+} else {
+    alert(`You asked: ${userQuestion}`);
+};
 
 var randomNumber = Math.floor(Math.random() * 8);
 var eightBall = "";
