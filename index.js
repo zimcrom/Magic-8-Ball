@@ -4,11 +4,11 @@ var userQuestion = document.querySelector('#questionForm').value;
 console.log(userQuestion);
 if (userQuestion === '') {
     alert('Please ask a question.');
+
 } else {
     alert(`You asked: ${userQuestion}`);
-};
 
-var randomNumber = Math.floor(Math.random() * 8);
+    var randomNumber = Math.floor(Math.random() * 8);
 var eightBall = "";
 
 switch (randomNumber) {
@@ -40,6 +40,7 @@ switch (randomNumber) {
 
 alert(`The eight ball answered: ${eightBall}`);
 
+};
 };
 
 // Now to select the button
