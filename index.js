@@ -1,11 +1,16 @@
+// Make function to run eight ball
 function runEightBall(){
 
+// Make var to take question
 var userQuestion = document.querySelector('#questionForm').value;
 console.log(userQuestion);
-if (userQuestion === '') {
+
+// Make exception for if it's blank
+if (userQuestion === '' || userQuestion === null) {
     alert('Please ask a question.');
 
 } else {
+  // alert the question they asked
     alert(`You asked: ${userQuestion}`);
 
     var randomNumber = Math.floor(Math.random() * 8);
